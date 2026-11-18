@@ -1,0 +1,17 @@
+# Reto 1: Caracterización, Ingesta ETL, Correlación y Dashboarding
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Reto 2: MapReduce y Hadoop
+mrjob>=0.7.4
+
+# Reto 3: Procesamiento Distribuido y Formato Parquet
+pyarrow>=12.0.0
+
+# Reto 4: Web Scraping y Streaming
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+kafka-python-ng>=2.2.0

@@ -1,0 +1,15 @@
+services:
+  netflix-analytics:
+    image: karimetapia/netflix-bigdata-analytics:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: netflix_bigdata_platform
+    volumes:
+      - ./data:/app/data
+      - ./reto1_etl_python/output:/app/reto1_etl_python/output
+      - ./reto2_hadoop_mapreduce_hive/output_mr:/app/reto2_hadoop_mapreduce_hive/output_mr
+      - ./reto3_spark_processing/output:/app/reto3_spark_processing/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["python", "run_project.py"]
